@@ -15,5 +15,29 @@
 }
 
 html {
-  @apply bg-gray-700;
+  @apply bg-gray-800 text-slate-50;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  --scroll-color: theme('colors.gray.700');
+  scrollbar-width: auto;
+  scrollbar-color: var(--scroll-color) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.35rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color);
+  border-radius: 1rem;
+  border: 0px solid #ffffff;
+  background-clip: padding-box;
 }
