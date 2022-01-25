@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto+Mono&display=swap');
+
+*,
+*::before,
+*::after {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-secondary {
+  font-family: 'Roboto Mono', monospace;
+}
+
+html {
+  @apply bg-gray-700;
+}
